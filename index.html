@@ -30,15 +30,17 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-video" aria-hidden="true">
         <iframe
+          id="heroVideoDesktop"
           class="hero-video-desktop"
-          src="https://www.youtube-nocookie.com/embed/9_fhUgNgHVY?autoplay=1&mute=1&controls=0&loop=1&playlist=9_fhUgNgHVY&playsinline=1&rel=0&disablekb=1&modestbranding=1"
+          src="https://www.youtube-nocookie.com/embed/9_fhUgNgHVY?autoplay=1&mute=1&controls=0&loop=1&playlist=9_fhUgNgHVY&playsinline=1&rel=0&disablekb=1&modestbranding=1&enablejsapi=1"
           title="Doc's Fishing Charters Louisiana marsh fishing sizzle reel"
           allow="autoplay; encrypted-media; picture-in-picture"
           referrerpolicy="strict-origin-when-cross-origin"
           tabindex="-1"></iframe>
         <iframe
+          id="heroVideoMobile"
           class="hero-video-mobile"
-          src="https://www.youtube-nocookie.com/embed/2xbGnpimlJg?autoplay=1&mute=1&controls=0&loop=1&playlist=2xbGnpimlJg&playsinline=1&rel=0&disablekb=1&modestbranding=1"
+          src="https://www.youtube-nocookie.com/embed/2xbGnpimlJg?autoplay=1&mute=1&controls=0&loop=1&playlist=2xbGnpimlJg&playsinline=1&rel=0&disablekb=1&modestbranding=1&enablejsapi=1"
           title="Doc's Fishing Charters vertical mobile sizzle reel"
           allow="autoplay; encrypted-media; picture-in-picture"
           referrerpolicy="strict-origin-when-cross-origin"
@@ -54,10 +56,14 @@
           <a class="button ghost" href="#charters">View Charter Details</a>
         </div>
         <p class="credential">Captain Maurice d’Aquin · USCG Licensed &amp; Insured</p>
+        <button class="marsh-sound" id="marshSound" type="button" aria-pressed="false">
+          <span class="sound-icon" aria-hidden="true">◖</span>
+          <span class="sound-label">Experience the Marsh</span>
+        </button>
       </div>
     </section>
 
-    <section class="quick-facts" aria-label="Charter highlights">
+    <section class="quick-facts reveal" aria-label="Charter highlights">
       <div class="wrap facts-grid">
         <div><strong>$550</strong><span>for 2 anglers</span></div>
         <div><strong>+$50</strong><span>each additional angler</span></div>
@@ -66,7 +72,7 @@
       </div>
     </section>
 
-    <section class="section charter-section" id="charters">
+    <section class="section reveal charter-section" id="charters">
       <div class="wrap split">
         <div class="section-copy">
           <p class="eyebrow red">The Charter</p>
@@ -87,7 +93,7 @@
       </div>
     </section>
 
-    <section class="section dark-section" id="captain">
+    <section class="section reveal dark-section" id="captain">
       <div class="wrap captain-grid">
         <div class="captain-photo">
           <img src="assets/images/61848782-1215152165321562-4117122926589771776-n-1.webp" alt="Captain Maurice Doc d’Aquin holding a redfish" loading="lazy">
@@ -102,14 +108,14 @@
       </div>
     </section>
 
-    <section class="section experience-section">
+    <section class="section reveal experience-section">
       <div class="wrap">
         <div class="section-heading center">
           <p class="eyebrow red">The Experience</p>
           <h2>Good fishing. Great memories.</h2>
           <p>Families, friends, fly anglers, and first-timers are all welcome aboard.</p>
         </div>
-        <div class="story-grid">
+        <div class="story-grid stagger-group">
           <figure class="story story-wide"><img src="assets/images/653799443-10164136290968872-9219161919447376568-n-1.webp" alt="Group of anglers smiling with speckled trout" loading="lazy"></figure>
           <figure class="story"><img src="assets/images/67742854-1261805137322931-4483871034398736384-n-1.webp" alt="Young angler holding a fish" loading="lazy"></figure>
           <figure class="story"><img src="assets/images/741662304-3424170924419664-8781419931483296904-n-1.webp" alt="Happy guests holding a large redfish" loading="lazy"></figure>
@@ -119,7 +125,7 @@
       </div>
     </section>
 
-    <section class="section boat-section">
+    <section class="section reveal boat-section">
       <div class="wrap boat-layout">
         <div class="boat-image"><img src="assets/images/fishing-with-mer.webp" alt="Doc's Fishing Charters Ranger boat on the water" loading="lazy"></div>
         <div class="boat-copy">
@@ -131,13 +137,13 @@
       </div>
     </section>
 
-    <section class="section gallery-section" id="gallery">
+    <section class="section reveal gallery-section" id="gallery">
       <div class="wrap">
         <div class="section-heading">
           <p class="eyebrow red">Recent Catches</p>
           <h2>From the water</h2>
         </div>
-        <div class="gallery" id="galleryGrid">
+        <div class="gallery stagger-group" id="galleryGrid">
           <button class="gallery-item tall" data-full="assets/images/614252625-3242489129254512-5376661224506839850-n.webp"><img src="assets/images/614252625-3242489129254512-5376661224506839850-n.webp" alt="Angler holding a trophy redfish" loading="lazy"></button>
           <button class="gallery-item" data-full="assets/images/744357832-3428011884035568-4346233812670254843-n-1.webp"><img src="assets/images/744357832-3428011884035568-4346233812670254843-n-1.webp" alt="Redfish and fly fishing gear on ice" loading="lazy"></button>
           <button class="gallery-item" data-full="assets/images/711136203-3386247821545308-6143196565808215203-n.webp"><img src="assets/images/711136203-3386247821545308-6143196565808215203-n.webp" alt="Angler holding a flounder" loading="lazy"></button>
@@ -151,7 +157,7 @@
     </section>
 
 
-    <section class="section social-section" id="social">
+    <section class="section reveal social-section" id="social">
       <div class="wrap social-layout">
         <div class="social-copy">
           <p class="eyebrow red">Follow the Action</p>
@@ -170,7 +176,7 @@
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
+    <section class="section reveal contact-section" id="contact">
       <div class="wrap contact-card">
         <div>
           <p class="eyebrow">Reserve Your Trip</p>
