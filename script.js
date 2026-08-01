@@ -113,3 +113,15 @@ mobileView.addEventListener?.('change', () => {
   sendPlayerCommand(mobileVideo, 'mute');
   sendPlayerCommand(activeVideo(), 'unMute');
 });
+
+
+// Hide YouTube's initial play overlay behind a clean poster while autoplay starts.
+const heroVideoCover = document.getElementById('heroVideoCover');
+const hideHeroVideoCover = () => {
+  if (!heroVideoCover) return;
+  heroVideoCover.classList.add('is-hidden');
+  window.setTimeout(() => heroVideoCover.remove(), 800);
+};
+window.setTimeout(hideHeroVideoCover, 1800);
+desktopVideo?.addEventListener('load', () => window.setTimeout(hideHeroVideoCover, 1000), { once: true });
+mobileVideo?.addEventListener('load', () => window.setTimeout(hideHeroVideoCover, 1000), { once: true });

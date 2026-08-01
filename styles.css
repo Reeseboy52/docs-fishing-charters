@@ -76,3 +76,16 @@ body{overflow-x:hidden}
 @media(min-width:901px){.feature-image img,.captain-photo img,.boat-image img{transition:transform 1s cubic-bezier(.2,.7,.2,1)}.feature-image:hover img,.captain-photo:hover img,.boat-image:hover img{transform:scale(1.025)}}
 @media(max-width:560px){.marsh-sound{margin-top:18px}.hero-content>.marsh-sound{width:auto}.sound-label{font-size:.66rem}.hero-video{transform:none!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-content>*{animation:none}.hero-video{transform:none!important}.js .reveal,.js .stagger-group>*{opacity:1;transform:none;transition:none}.marsh-sound[aria-pressed="true"] .sound-icon{animation:none}}
+
+/* Header clearance: keep the location eyebrow and hero copy below the desktop logo. */
+@media (min-width:901px){
+  .hero-content{
+    padding-top:175px;
+  }
+}
+
+
+/* Clean hero startup: cover the YouTube player until autoplay is underway. */
+.hero-video-cover{position:absolute;inset:0;z-index:2;background:url('assets/images/img-6142-1.webp') center 46%/cover no-repeat;opacity:1;transition:opacity .65s ease;pointer-events:none}
+.hero-video-cover.is-hidden{opacity:0}
+@media(max-width:560px){.hero-video-cover{background-position:center center}}
