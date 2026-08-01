@@ -33,3 +33,18 @@
   .brand img{width:145px}
   .hero-content{padding-top:150px;padding-bottom:58px}
 }
+
+/* Mobile boat photo: preserve the full landscape composition instead of cropping it vertically. */
+@media (max-width:560px){
+  .boat-image{
+    height:auto;
+    aspect-ratio:16 / 9;
+    overflow:hidden;
+  }
+  .boat-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
+  }
+}
