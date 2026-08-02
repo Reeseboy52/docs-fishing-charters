@@ -93,6 +93,9 @@ body{overflow-x:hidden}
 
 /* Content expansion: boat options, journal article feature, and lodging */
 .boat-options-section{background:#f5f3ed}
+.boat-options-section .section-heading h2{white-space:nowrap}
+.boat-options-section .section-heading.center p{max-width:720px}
+@media(max-width:900px){.boat-options-section .section-heading h2{white-space:normal}}
 .boat-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px}
 .boat-card{position:relative;background:#fff;border:1px solid var(--line);padding:38px;min-height:280px;box-shadow:0 16px 40px #0000000d}
 .boat-card h3{font-family:Georgia,serif;font-size:clamp(1.7rem,3vw,2.4rem);margin:10px 0 14px}
